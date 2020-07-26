@@ -1,38 +1,53 @@
 .header {
   @extend .container;
-  display: flex;
+
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $desktop) {
+    width: 480px;
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   list-style: none;
-  margin-left: 85px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  & .item + .item {
-    margin-left: 50px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 85px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0;
+
+    & .item + .item {
+      margin-left: 50px;
+    }
   }
 }
 
 .site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: $title-text-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
@@ -40,6 +55,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -60,20 +83,25 @@
 }
 
 .auth-nav {
+  display: none;
   @extend %list;
-  display: flex;
-  margin-left: auto;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  & .item + .item {
-    margin-left: 30px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+    .auth-nav .item + .item {
+      margin-left: 30px;
+    }
   }
 }
 
 .auth-nav .item {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .auth-nav .link {
@@ -83,14 +111,19 @@
 
   color: $main-text-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14x;
+  font-size: 18px;
+  line-height: 1.17x;
   letter-spacing: 0.02em;
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14x;
   }
 }
 
