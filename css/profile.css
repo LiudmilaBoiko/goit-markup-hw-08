@@ -19,8 +19,6 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .page {
@@ -309,6 +307,7 @@
 .footer-content {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -320,6 +319,11 @@
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+}
+
+.join {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -389,7 +393,10 @@
 
 .email {
   display: block;
-  width: 358px;
+  width: calc(100% - 15px * 2);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
   height: 50px;
   padding: 15px 16px;
   text-decoration: none;
@@ -462,6 +469,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-portfolio {
