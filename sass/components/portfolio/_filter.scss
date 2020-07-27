@@ -1,17 +1,35 @@
 .filter-list {
   display: flex;
-  justify-content: center;
+
+  flex-wrap: wrap;
 
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+
+  // margin-bottom: 40px;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+.filter-list-item {
+  margin-bottom: 15px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
 }
 
-.filter-list-item:not(:first-child) {
-  margin-left: 8px;
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter {
+  padding: 0px 15px 25px;
+  margin: 0;
 }

@@ -273,6 +273,12 @@
   padding-top: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .section {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-bottom: 94px;
