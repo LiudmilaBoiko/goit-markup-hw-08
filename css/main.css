@@ -583,8 +583,8 @@
   top: 50%;
   left: 50%;
   z-index: 999;
-  min-height: 581px;
-  min-width: 528px;
+  min-height: 609px;
+  max-width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -597,6 +597,13 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
+}
+
 .modal-form {
   list-style: none;
   padding: 0;
@@ -604,22 +611,37 @@
 }
 
 .form-header {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 40px;
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-header {
+    line-height: 1.15;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .agreement {
-  font-size: 14px;
-  line-height: 171%;
+  font-size: 12px;
+  line-height: 1.17%;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    line-height: 171%;
+  }
 }
 
 .modal-link {
@@ -702,11 +724,18 @@
 
 .modal-submit {
   margin-bottom: 40px;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin-left: 125px;
+  margin-right: 125px;
   margin-top: 30px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-submit {
+    margin-left: 164px;
+    margin-right: 164px;
+  }
 }
 
 .button.modal-submit:hover {
@@ -759,14 +788,21 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
   content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement::after {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
 }
 
 .checkbox:checked + .agreement::after {
