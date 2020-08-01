@@ -3,7 +3,11 @@
   padding-top: 60px;
 
   @media screen and (min-width: $mobile) {
-    max-width: $mobile;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
@@ -32,5 +36,6 @@
 .section.no-padding-bottom {
   @media screen and (min-width: $desktop) {
     padding-bottom: 0;
+    margin-right: 0;
   }
 }

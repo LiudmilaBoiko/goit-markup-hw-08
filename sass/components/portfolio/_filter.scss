@@ -11,6 +11,10 @@
 
   // margin-bottom: 40px;
 
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
     justify-content: center;

@@ -2,7 +2,6 @@
   @extend .container;
 
   border-bottom: 1px solid #ececec;
-  
 
   // @media screen and (min-width: $desktop) {
   //   width: 480px;
@@ -10,8 +9,9 @@
   // }
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   @media screen and (min-width: $desktop) {
@@ -24,6 +24,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    // justify-content: space-around;
   }
 
   @media screen and (min-width: $desktop) {
@@ -40,7 +41,8 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 81px;
+
+    margin-left: 65px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0;
