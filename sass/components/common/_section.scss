@@ -3,16 +3,19 @@
   padding-top: 60px;
 
   @media screen and (min-width: $mobile) {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 94px;
     padding-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 100%;
   }
 }
 

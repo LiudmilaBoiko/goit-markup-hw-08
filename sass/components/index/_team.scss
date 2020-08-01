@@ -9,6 +9,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
     .team > .item {
       margin-right: 30px;
       background-color: #fff;
@@ -30,6 +31,10 @@
   @media screen and (min-width: $tablet) {
     min-width: calc((100% - 15px * 4) / 2);
     margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: calc((100% - 15px * 8) / 4);
   }
 }
 
