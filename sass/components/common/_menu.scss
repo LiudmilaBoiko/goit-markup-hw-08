@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
   background-color: transparent;
 
   @media screen and (min-width: $tablet) {
@@ -20,15 +21,24 @@
   display: none;
 }
 .menu-container {
+  display: flex;
+  align-items: baseline;
+  z-index: 999;
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    background-color: $white-color;
+    border-top: 1px solid #ececec;
 
     &.is-open {
       display: block;
     }
   }
+  // @media screen and (min-width: $desktop) {
+  //   justify-content: space-between;
+  // }
 }

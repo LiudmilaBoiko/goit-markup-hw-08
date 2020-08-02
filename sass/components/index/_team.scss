@@ -3,6 +3,7 @@
   display: block;
 
   @media screen and (min-width: $tablet) {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

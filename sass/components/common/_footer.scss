@@ -1,9 +1,8 @@
 .footer {
   background-color: $footer-background;
 
-  @media screen and (min-width: $desktop) {
-    width: 480px;
-    display: flex;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
   }
 
   @media screen and (min-width: $tablet) {
@@ -25,8 +24,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .footer-content .list {
@@ -67,13 +66,17 @@
 }
 .footer-list-title {
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
   color: $white-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  // @media screen and (min-width: $tablet) {
+  //   text-align: left;
+  // }
 }
 .email {
   display: block;
@@ -118,6 +121,9 @@
 }
 
 .footer-top {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;

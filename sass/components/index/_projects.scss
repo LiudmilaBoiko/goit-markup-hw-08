@@ -4,6 +4,8 @@
   @media screen and (min-width: $desktop) {
     display: block;
     width: $desktop;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -14,6 +16,7 @@
 
 .projects {
   @extend %list;
+  width: 100%;
   @media screen and (min-width: $desktop) {
     display: flex;
 
