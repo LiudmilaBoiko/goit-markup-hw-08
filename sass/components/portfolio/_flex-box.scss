@@ -1,5 +1,6 @@
 .flex-box {
-  @extend %list;
+  // @extend %list;
+  list-style: none;
   width: calc(100% - 30px);
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +35,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 370px;
+    // width: 370px;
+    max-width: calc((100% - 15px * 6) / 3);
     margin-right: 30px;
     margin-left: 0;
 

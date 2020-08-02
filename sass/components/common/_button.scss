@@ -36,6 +36,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+
   // @media screen and (min-width: $tablet) {
   //   margin-left: 12px;
   //   margin-right: 15px;
