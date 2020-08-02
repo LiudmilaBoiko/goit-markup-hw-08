@@ -6,12 +6,23 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
+
+  padding-top: 93px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -20,12 +31,12 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   z-index: 999;
 
-  max-height: 77%;
-  max-width: 94%;
+  // max-height: 77%;
+  // max-width: 94%;
   overflow: auto;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,8 +47,9 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: $desktop) {
-    min-height: 59%;
-    min-width: 58%;
+    top: 50%;
+    // min-height: 59%;
+    // min-width: 58%;
   }
 }
 

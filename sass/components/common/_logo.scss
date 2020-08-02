@@ -51,3 +51,6 @@
 .logo-white {
   color: var(--color2);
 }
+body.modal-open {
+  overflow: hidden;
+}
