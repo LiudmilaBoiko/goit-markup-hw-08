@@ -15,7 +15,12 @@
 }
 
 .projects {
-  @extend %list;
+  // @extend %list;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 100%;
   @media screen and (min-width: $desktop) {
     display: flex;

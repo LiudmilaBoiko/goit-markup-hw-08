@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.auth-nav, .join, .projects, .social-networks {
+.auth-nav, .join, .social-networks {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1008,6 +1008,7 @@ body.modal-open {
 
 .features {
   list-style: none;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1124,6 +1125,10 @@ body.modal-open {
 }
 
 .projects {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
