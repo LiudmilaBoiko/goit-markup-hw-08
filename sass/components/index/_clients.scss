@@ -21,6 +21,9 @@
   @media screen and (min-width: $desktop) {
     width: $desktop;
     flex-wrap: nowrap;
+    // padding-left: 0;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }
 
