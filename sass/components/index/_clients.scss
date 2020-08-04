@@ -1,26 +1,28 @@
 .clients {
   // @extend %list;
   list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: 0;
+  padding: 0;
 
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  // margin: -15px;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
-    flex-wrap: nowrap;
+    max-width: 100%;
+    // flex-wrap: nowrap;
     // padding-left: 0;
     // margin-left: auto;
     // margin-right: auto;

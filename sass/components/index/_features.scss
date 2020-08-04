@@ -2,8 +2,9 @@
   // @extend %list;
   list-style: none;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  // margin-left: auto;
+  // margin-right: auto;
 
   @media screen and (min-width: $mobile) {
     max-width: $mobile;
@@ -13,7 +14,7 @@
     min-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    // margin: -15px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -21,6 +22,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 }
 
