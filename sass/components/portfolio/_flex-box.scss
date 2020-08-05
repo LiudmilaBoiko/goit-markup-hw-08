@@ -2,8 +2,8 @@
   // @extend %list;
   list-style: none;
   width: calc(100% - 30px);
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   justify-content: center;
   align-items: center;
 
@@ -13,6 +13,7 @@
     flex-wrap: wrap;
 
     margin: -15px;
+    padding-left: 0;
   }
 }
 .flex-element {

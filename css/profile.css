@@ -802,8 +802,6 @@ body.modal-open {
 .flex-box {
   list-style: none;
   width: calc(100% - 30px);
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -821,6 +819,7 @@ body.modal-open {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+    padding-left: 0;
   }
 }
 
